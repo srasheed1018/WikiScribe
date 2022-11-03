@@ -1,0 +1,114 @@
+@font-face {
+    font-family: secular-one;
+    src: url(fonts/SecularOne-Regular.ttf);
+}
+
+@media only screen and (max-width: 1300px) {
+    .title_div {
+        margin: 4%;
+        text-align: center;
+    }
+    #body_target {
+        font-size: 75%;
+    }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: secular-one;
+    font-size: 250%;
+    background-color: darkslategrey;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+#body_target {
+    margin: 5%;
+}
+
+#word_to_type {
+    font-size: 200%;
+}
+
+#title_target {
+    text-shadow: 3px 3px black;
+}
+
+#div_win {
+    text-shadow: 3px 3px black;
+}
+
+#intro_blurb {
+    text-shadow: 3px 3px black;
+}
+
+button {
+    background-color: green;
+    border-radius: 8px;
+}
+
+a:link {
+    color: cyan;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: cyan;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: cyan;
+    text-decoration: underline;
+} 
+
+input {
+    color: black;
+}
+
+.input {
+    margin: auto;
+}
+
+#start_button {
+    font-size: 250%;
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#word_to_type {
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#disclaimer {
+    font-size: small;
+}
+
+#welcome_text {
+    margin-bottom: 5%;
+    font-size: 175%;
+}
+
+#mute_toggle {
+    text-decoration: underline;
+}

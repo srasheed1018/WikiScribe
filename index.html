@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <title>
+            WikiScribe
+        </title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-lg-12">
+                <button id="start_button">Start</button>
+                <div id="intro_blurb">
+                    <h1 id="welcome_text">Welcome to WikiScribe!</h1>
+                    <p>See how fast you can type out a random blurb from Wikipedia.</p>
+                    <p style="color: gold;">Works best on desktop!</p>
+                    <p id="disclaimer">Note: Articles with non-English characters may misbehave. Please report any issues <a href="https://github.com/srasheed1018/WikiScribe/issues" target="_blank">here.</a></p>
+                    <p id="mute_toggle">SFX: ON</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12, title_div">
+                <!--title goes here-->
+                <h1 id="title_target"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!--body goes here-->
+                <p id="body_target"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p id="word_to_type"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div style="text-align: center;">
+                    <input type="text" id="typing_box" onkeypress="scanInput()" onkeyup="scanInput()" style="text-align: center;">  
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" id="div_win">
+            </div>
+        </div>
+        <button onclick="endGame()" style="display:none;">WIN BUTTON</button>
+    </body>
+</html>
